@@ -3,6 +3,7 @@ Lightweight, bootstrap-attached login form.
 
 ## Credits
 - Bootswatch - [Paper Theme](https://bootswatch.com/paper)
+- [Floating Label](http://jsfiddle.net/RyanWalters/z9ymd852/)
 
 ## Bootstrap Differences
 
