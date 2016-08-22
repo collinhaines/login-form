@@ -1,6 +1,9 @@
 # Login Form
 Lightweight, bootstrap-attached login form.
 
+## Credits
+- Bootswatch - [Paper Theme](https://bootswatch.com/paper)
+
 ## Bootstrap Differences
 
 #### mixins/center-block.less
