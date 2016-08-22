@@ -1,0 +1,22 @@
+{
+  "name": "login-form",
+  "version": "0.1",
+  "description": "Lightweight, bootstrap-attached login form.",
+  "author": "Collin Haines",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
