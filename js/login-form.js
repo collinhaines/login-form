@@ -12,6 +12,13 @@ $('#login')
   .on('blur', '.form-control', function (event) {
     $(event.target).parents('.form-group').toggleClass('focused');
   })
+  .on('keyup', '.form-control', function (event) {
+    if (event.target.value.trim() === '') {
+      $(event.target).parents('.form-group').removeClass('has-text');
+    } else {
+      $(event.target).parents('.form-group').addClass('has-text');
+    }
+  })
 
   // Demo use only
   .on('submit', function (event) {
