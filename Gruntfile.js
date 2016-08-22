@@ -3,7 +3,7 @@ module.exports = function (grunt) {
     less: {
       default: {
         src:  ['css/src/**/*.less', '!css/src/bootstrap/**/*.less'],
-        dest: 'css/custom.css'
+        dest: 'css/login-form.css'
       },
 
       bootstrap: {
@@ -23,8 +23,13 @@ module.exports = function (grunt) {
     },
 
     watch: {
+      bootstrap: {
+        files: 'css/src/bootstrap/**/*.less',
+        tasks: ['less']
+      },
+
       less: {
-        files: 'css/src/**/*.less',
+        files: ['css/src/**/*.less', '!css/src/bootstrap/**/*.less'],
         tasks: ['less']
       }
     },

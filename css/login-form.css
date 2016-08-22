@@ -1,0 +1,54 @@
+.form-group {
+  position: relative;
+}
+.control-label {
+  position: absolute;
+  top: -25px;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  pointer-events: none;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform: translate3d(0, 22px, 0);
+  transform: translate3d(0, 22px, 0);
+  -webkit-transform-origin: left top;
+  -moz-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transition-duration: 240ms;
+  transition-duration: 240ms;
+}
+.form-group.focused .control-label,
+.form-group.has-text .control-label {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(0.75);
+  -ms-transform: scale(0.75);
+  -o-transform: scale(0.75);
+  transform: scale(0.75);
+}
+.form-group.focused .character-count,
+.form-group.has-text .character-count {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.form-control {
+  margin-bottom: 25px;
+}
+.form-control::-webkit-input-placeholder {
+  color: transparent;
+  -webkit-transition-duration: 240ms;
+  transition-duration: 240ms;
+}
+.form-control:focus::-webkit-input-placeholder {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.form-group.focused .form-control::-webkit-input-placeholder {
+  color: #BBBBBB;
+}
