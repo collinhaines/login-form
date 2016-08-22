@@ -52,3 +52,14 @@
 .form-group.focused .form-control::-webkit-input-placeholder {
   color: #BBBBBB;
 }
+
+.panel-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.panel-body {
+  padding-top: 25px;
+}
+.control-label {
+  margin-left: 15px;
+}
