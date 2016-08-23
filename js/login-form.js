@@ -24,3 +24,16 @@ $('#login')
   .on('submit', function (event) {
     event.preventDefault();
   })
+
+$('#show-password')
+  .on('click', function (event) {
+    if ($(event.target).text().toLowerCase() === 'show password') {
+      // Show the password.
+      $('#login #password').attr('type', 'text');
+      $('#show-password').text('Hide Password');
+    } else if ($(event.target).text().toLowerCase() === 'hide password') {
+      // Hide the password.
+      $('#login #password').attr('type', 'password');
+      $('#show-password').text('Show Password');
+    }
+  });

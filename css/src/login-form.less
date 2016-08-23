@@ -1,5 +1,7 @@
 // Login Form
 
+@import "bootstrap/variables.less";
+
 .panel-title {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -11,4 +13,25 @@
 
 .control-label {
   margin-left: 15px;
+}
+
+.show-password {
+  &,
+  &:focus,
+  &:hover,
+  &:active,
+  &:visited {
+    position: absolute;
+    top: 0;
+    right: 15px;
+
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+
+    color: @text-muted;
+    font-size: 10px;
+    text-decoration: none;
+  }
 }

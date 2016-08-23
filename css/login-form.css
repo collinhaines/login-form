@@ -63,3 +63,19 @@
 .control-label {
   margin-left: 15px;
 }
+.show-password,
+.show-password:focus,
+.show-password:hover,
+.show-password:active,
+.show-password:visited {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  color: #bbb;
+  font-size: 10px;
+  text-decoration: none;
+}
