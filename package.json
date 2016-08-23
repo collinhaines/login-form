@@ -7,10 +7,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/collinhaines/login-form"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/collinhaines/login-form/issues"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
