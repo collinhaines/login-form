@@ -36,4 +36,6 @@ $('#show-password')
       $('#login #password').attr('type', 'password');
       $('#show-password').text('Show Password');
     }
+
+    event.preventDefault();
   });
