@@ -27,11 +27,11 @@ $('#login')
 
 $('#show-password')
   .on('click', function (event) {
-    if ($(event.target).text().toLowerCase() === 'show password') {
+    if ($(event.target).text() === 'Show Password') {
       // Show the password.
       $('#login #password').attr('type', 'text');
       $('#show-password').text('Hide Password');
-    } else if ($(event.target).text().toLowerCase() === 'hide password') {
+    } else if ($(event.target).text() === 'Hide Password') {
       // Hide the password.
       $('#login #password').attr('type', 'password');
       $('#show-password').text('Show Password');
