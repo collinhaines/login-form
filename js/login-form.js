@@ -19,11 +19,46 @@ $('#login')
       $(event.target).parents('.form-group').addClass('has-text');
     }
   })
-
-  // Demo use only
   .on('submit', function (event) {
+    var username = $('#login #username').val().trim();
+    var password = $('#login #password').val().trim();
+    var remember = $('#login #remember').is(':checked');
+
+    if (username === '') {
+      spawnLoginAlert('#username', 'Please fill out the username.');
+
+      event.preventDefault();
+      return false;
+    } else {
+      $('#login #username')
+        .parent()
+        .removeClass('has-error');
+    }
+
+    if (password === '') {
+      spawnLoginAlert('#password', 'Please fill out the password.');
+
+      event.preventDefault();
+      return false;
+    } else {
+      $('#login #password')
+        .parent()
+        .removeClass('has-error');
+    }
+
+    if ($('#alerter').hasClass('alert-danger')) {
+      $('#alerter').removeClass('alert-danger');
+      $('#alerter h5, #alerter p').html('&nbsp;');
+    }
+
+    console.log('Login form is being submitted.'
+      + '\n- Username: ' + username
+      + '\n- Password: ' + password
+      + '\n- Remember: ' + remember);
+
+    // Demo use only
     event.preventDefault();
-  })
+  });
 
 $('#show-password')
   .on('click', function (event) {
@@ -39,3 +74,25 @@ $('#show-password')
 
     event.preventDefault();
   });
+
+/**
+ * Spawns the alert for the login form.
+ *
+ * @param input: The element that is incorrect.
+ * @param text: The text to be displayed on the alert.
+ */
+function spawnLoginAlert(input, text) {
+  // Spawn the alert.
+  $('#alerter')
+    .addClass('alert-danger')
+    .find('h5')
+    .text('Error!')
+    .next()
+    .text(text);
+
+  // Error-out the incorrect input.
+  $('#login')
+    .find(input)
+    .parent()
+    .addClass('has-error');
+}
